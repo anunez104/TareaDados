@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.material3.Button
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -55,6 +56,11 @@ fun StateDaditos() {
                 contentDescription = null,
                 modifier = Modifier.size(200.dp)
             )
+            Button(onClick = {
+                numero = (1..6).random()})
+            {
+                Text(text = "LANZA EL DADO!!!")
+            }
         }
     }
 }
